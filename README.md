@@ -1,12 +1,11 @@
-# NixOS GNOME Configuration
+# NixOS KDE Configuration
 
-This is a NixOS configuration with GNOME desktop environment.
+This is a NixOS configuration with KDE desktop environment.
 
 ## Features
 
 - Apple SF fonts integration
 - VSCode with Catppuccin theme
-- Ghostty terminal emulator
 - Custom font configurations using SF Pro Display and SF Mono
 
 ## Fonts
