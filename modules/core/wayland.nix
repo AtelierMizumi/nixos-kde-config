@@ -4,7 +4,7 @@
     enable = true;
     xdgOpenUsePortal = true;
     extraPortals = [
-      pkgs.kdePackages.xdg-desktop-portal-kde;
+      pkgs.kdePackages.xdg-desktop-portal-kde
     ];
   };
 }
