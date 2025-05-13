@@ -11,7 +11,6 @@
     nitch # systhem fetch util
     wavemon # monitoring for wireless network devices
     nvtopPackages.full
-    zenith-nvidia
 
     # vkcube
     vulkan-tools

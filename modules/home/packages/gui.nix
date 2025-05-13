@@ -8,11 +8,9 @@
 
     ## Office
     libreoffice
-    gnome-calculator
 
     ## Utility
     dconf-editor
-    gnome-disk-utility
     mission-center # GUI resources monitor
   ];
 }
