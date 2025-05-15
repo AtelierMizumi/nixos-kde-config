@@ -2,7 +2,6 @@
 {
   imports = [
     # better cat command
-    ./apple-fonts.nix # Apple SF fonts
     ./browser.nix # firefox based browser
     ./cava.nix # audio visualizer
     ./discord.nix # discord
