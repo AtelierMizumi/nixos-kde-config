@@ -11,6 +11,5 @@
 
     ## Python
     python3
-    python312Packages.ipython
   ];
 }

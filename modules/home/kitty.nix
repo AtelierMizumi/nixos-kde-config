@@ -6,7 +6,7 @@
     themeFile = "gruvbox-dark-hard";
 
     font = {
-      name = "SFMono Nerd Font";
+      name = "Noto Mono";
       size = if (host == "laptop") then 15 else 16;
     };
 
