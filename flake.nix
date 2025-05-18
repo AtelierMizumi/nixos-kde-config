@@ -19,11 +19,7 @@
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
-    ghostty.url = "github:ghostty-org/ghostty";
-
-    # San Francisco Fonts | Apple Fonts
-    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
-    apple-fonts.inputs.nixpkgs.follows = "nixpkgs";
+    ghostty.url = "github:ghostty-org/ghostty"
   };
 
   outputs =
