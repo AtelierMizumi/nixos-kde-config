@@ -31,5 +31,5 @@
         cpupower
       ]
       ++ [ pkgs.cpupower-gui ];
-  };
+  };  
 }

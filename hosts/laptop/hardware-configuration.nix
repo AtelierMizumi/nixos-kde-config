@@ -47,7 +47,7 @@
 
   fileSystems."/home/thuanc177/Drives/Old-Linux-Drive" = {
     device = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
-    fsType = "ntfs";
+    fsType = "ext4";
     options = [
       "users"
       "auto"
