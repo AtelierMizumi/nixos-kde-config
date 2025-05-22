@@ -1,6 +1,10 @@
-{ inputs, ... }:
+{ inputs, username, ... }:
 {
   imports = [ inputs.nixcord.homeModules.nixcord ];
+
+  home.file.".config/discord/settings.json".text = ''
+  # This is created to be written into
+  '';
 
   programs.nixcord = {
     enable = true; # Enable Nixcord (It also installs Discord)
