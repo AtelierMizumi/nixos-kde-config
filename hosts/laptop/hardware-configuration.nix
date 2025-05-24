@@ -4,7 +4,6 @@
 {
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -32,18 +31,22 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/0c26eff3-fddd-41c3-98f2-02705a2ec2cc";
-      fsType = "ext4";
-    };
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/0c26eff3-fddd-41c3-98f2-02705a2ec2cc";
+    fsType = "ext4";
+  };
 
-  boot.initrd.luks.devices."luks-2d2d6f61-bfa8-4802-88d3-ab19e925d4ae".device = "/dev/disk/by-uuid/2d2d6f61-bfa8-4802-88d3-ab19e925d4ae";
+  boot.initrd.luks.devices."luks-2d2d6f61-bfa8-4802-88d3-ab19e925d4ae".device =
+    "/dev/disk/by-uuid/2d2d6f61-bfa8-4802-88d3-ab19e925d4ae";
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/0907-BC15";
-      fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
-    };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/0907-BC15";
+    fsType = "vfat";
+    options = [
+      "fmask=0077"
+      "dmask=0077"
+    ];
+  };
 
   fileSystems."/home/thuanc177/Drives/Old-Linux-Drive" = {
     device = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";

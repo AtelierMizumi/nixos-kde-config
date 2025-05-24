@@ -35,6 +35,8 @@
     cmake
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.11";
 }
