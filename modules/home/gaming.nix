@@ -12,11 +12,13 @@
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
 
     ## Minecraft
-    atlauncher
+    prismlauncher
+    # atlauncher
+    # multimc
 
     ## Celeste
-    celeste-classic
-    celeste-classic-pm
+    # celeste-classic
+    # celeste-classic-pm
 
     ## Doom
     # gzdoom
