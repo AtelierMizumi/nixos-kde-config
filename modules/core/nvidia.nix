@@ -1,7 +1,6 @@
 # Nvidia settings mostly:
 {
   config,
-  lib,
   pkgs,
   ...
 }:
