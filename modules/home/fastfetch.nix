@@ -5,14 +5,14 @@
   xdg.configFile."fastfetch/config.jsonc".text = ''
     {
       "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-      # "logo": {
-      #   "source": "$/{../../assets/logo/nixos-logo.png}",
-      #   "type": "kitty-direct",
-      #   "width": 32,
-      #   "padding": {
-      #     "top": 2
-      #   }
-      # },
+      // "logo": {
+      //   "source": "$/{../../assets/logo/nixos-logo.png}",
+      //   "type": "kitty-direct",
+      //   "width": 32,
+      //   "padding": {
+      //     "top": 2
+      //   }
+      // },
       "display": {
         "separator": "",
         "size": {

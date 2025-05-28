@@ -5,8 +5,7 @@
     XMODIFIERS = "@im=fcitx5";
     QT_IM_MODULE = "fcitx5";
     GTK_IM_MODULE = "fcitx5";
-    SDL_IM_MODULE=fcitx
-    XMODIFIERS=@im=fcitx
+    SDL_IM_MODULE = "fcitx";
   };
 
   i18n.inputMethod = {
