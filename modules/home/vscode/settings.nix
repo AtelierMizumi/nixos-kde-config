@@ -7,8 +7,8 @@
       "window.titleBarStyle" = "custom"; # needed otherwise vscode crashes, see https://github.com/NixOS/nixpkgs/issues/246509
 
       "window.menuBarVisibility" = "toggle";
-      "editor.fontFamily" = "'Noto Mono', 'monospace', monospace";
-      "terminal.integrated.fontFamily" = "'Noto Mono'";
+      "editor.fontFamily" = "'NotoMono Nerd Font', 'monospace', monospace";
+      "terminal.integrated.fontFamily" = "'NotoMono Nerd Font'";
       "editor.fontSize" = 18;
       #use Mocha as the base
       workbench.colorTheme = "Catppuccin Mocha";
