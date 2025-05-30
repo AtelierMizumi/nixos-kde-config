@@ -29,6 +29,7 @@
     libvdpau-va-gl
     egl-wayland
     mesa
+    nvidia-vaapi-driver
   ];
 
   hardware.nvidia = {
