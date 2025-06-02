@@ -14,9 +14,11 @@
   environment.systemPackages = with pkgs.kdePackages; [
     xdg-desktop-portal-kde
   ];
-  
+
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     plasma-browser-integration
     elisa
   ];
+
+  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }
