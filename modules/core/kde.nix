@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs.kdePackages; [
     xdg-desktop-portal-kde
+    kcalc
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [

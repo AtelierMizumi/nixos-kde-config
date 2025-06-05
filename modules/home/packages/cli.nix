@@ -22,6 +22,7 @@
 
     ## Multimedia
     mpv
+    ani-cli
 
     ## Utilities
     yt-dlp-light
