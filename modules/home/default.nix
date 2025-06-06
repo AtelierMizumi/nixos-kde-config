@@ -18,6 +18,5 @@
     ./ssh.nix
     ./vscode # vscode fork
     ./xdg-mimes.nix # xdg config
-    ./xserver.nix # x server configuration
   ];
 }

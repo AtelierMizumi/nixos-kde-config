@@ -29,5 +29,6 @@
     # snes9x
     # cemu
     # dolphin-emu
+    pcsx2
   ];
 }
