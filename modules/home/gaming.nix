@@ -30,5 +30,6 @@
     # cemu
     # dolphin-emu
     pcsx2
+    retroarch-free
   ];
 }
