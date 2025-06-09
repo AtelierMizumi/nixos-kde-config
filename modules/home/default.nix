@@ -15,7 +15,9 @@
     ./nvim.nix # neovim configuration
     ./packages # other packages
     ./proton-vpn.nix # protonvpn gui
+    ./plasma-manager.nix
     ./ssh.nix
+    ./user.nix # home manager configuration
     ./vscode # vscode fork
     ./xdg-mimes.nix # xdg config
   ];

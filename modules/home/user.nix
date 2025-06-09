@@ -8,7 +8,10 @@
   ...
 }:
 {
-  imports = [ inputs.home-manager.nixosModules.home-manager ];
+  imports = [
+    inputs.home-manager.nixosModules.home-manager
+    inputs.plasma-manager.nixosModules.plasma-manager
+  ];
   home-manager = {
     backupFileExtension = "backup";
     useUserPackages = true;
@@ -23,7 +26,10 @@
         ;
     };
     users.${username} = {
-      imports = [ ./../home/default.nix ];
+      imports = [
+        ./../home/default.nix
+        inputs.plasma-manager.homeModules.plasma-manager
+      ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "25.11";
@@ -34,7 +40,7 @@
   programs.fish.enable = true;
 
   environment.shellAliases = {
-    l = "ls -lChs";
+    l = "ls -lh --color=auto";
     c = "clear";
     disk = "lsblk -f";
     ff = "fastfetch";
