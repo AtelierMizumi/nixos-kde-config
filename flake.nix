@@ -32,7 +32,6 @@
     {
       nixpkgs,
       self,
-      home-manager,
       plasma-manager,
       ...
     }@inputs:
@@ -54,8 +53,11 @@
         #     };
         #   };
         laptop = nixpkgs.lib.nixosSystem {
-          inherit system;
-          modules = [ ./hosts/${host} ];
+          pkgs = import nixpkgs { inherit system; };
+          modules = [
+            ./hosts/${host}
+            inputs.plasma-manager.homeManagerModules.plasma-manager
+          ];
           specialArgs = {
             host = "nixos";
             inherit

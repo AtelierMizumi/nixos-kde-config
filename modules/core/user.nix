@@ -10,12 +10,12 @@
 {
   imports = [
     inputs.home-manager.nixosModules.home-manager
-    inputs.plasma-manager.nixosModules.plasma-manager
   ];
   home-manager = {
     backupFileExtension = "backup";
     useUserPackages = true;
     useGlobalPkgs = true;
+    sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
     extraSpecialArgs = {
       inherit
         inputs
@@ -28,7 +28,6 @@
     users.${username} = {
       imports = [
         ./../home/default.nix
-        inputs.plasma-manager.homeModules.plasma-manager
       ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
