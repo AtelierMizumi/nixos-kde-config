@@ -1,6 +1,7 @@
-{ pkgs, username, ... }: {
-  # Add user to libvirtd group
-  users.users.${username}.extraGroups = [ "libvirtd" ];
+{ pkgs, username, ... }:
+{
+  # User groups are managed in user.nix to avoid conflicts
+  # users.users.${username}.extraGroups = [ "libvirtd" ];
 
   virtualisation.waydroid.enable = true;
 
