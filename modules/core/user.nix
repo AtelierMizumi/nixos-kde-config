@@ -57,6 +57,7 @@
       "networkmanager"
       "wheel"
       "libvirtd"
+      "mlocate"
     ];
     shell = pkgs.fish;
   };

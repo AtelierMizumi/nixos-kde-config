@@ -33,5 +33,6 @@
     unzip
     wget
     xdg-utils
+    mlocate
   ];
 }
