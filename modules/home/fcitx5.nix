@@ -26,6 +26,9 @@
         fcitx5-unikey
         fcitx5-anthy
         fcitx5-configtool
+        qt5.qtbase
+        qt5.qttools
+        libsForQt5.plasma-framework
       ];
     };
   };
