@@ -15,8 +15,8 @@
         theme = "Bibata-Modern-Ice";
         size = 32;
       };
-      iconTheme = "Papirus-Dark";
-      wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Patak/contents/images/1080x1920.png";
+      iconTheme = "Whitesur";
+      wallpaper = ../../assets/wallpapers/anime-nix-wallpaper.png;
     };
 
     hotkeys.commands."launch-konsole" = {
@@ -73,11 +73,11 @@
           {
             iconTasks = {
               launchers = [
-                "applications:zen-browser.desktop"
-                "applications:vesktop.desktop"
+                # "applications:zen-browser.desktop"
+                # "applications:vesktop.desktop"
                 "applications:org.kde.dolphin.desktop"
                 "applications:org.kde.konsole.desktop"
-                "applications:pcsx2.desktop"
+                # "applications:pcsx2.desktop"
               ];
             };
           }

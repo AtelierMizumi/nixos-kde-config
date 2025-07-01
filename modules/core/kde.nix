@@ -14,6 +14,7 @@
   environment.systemPackages = with pkgs.kdePackages; [
     xdg-desktop-portal-kde
     kcalc
+    bibata-cursors
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
