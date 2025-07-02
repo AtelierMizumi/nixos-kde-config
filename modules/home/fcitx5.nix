@@ -19,6 +19,9 @@
   i18n.inputMethod = {
     type = "fcitx5";
     enable = true;
+    # Unfortunately there is a current bug that makes fcitx5 using the wrong QT library version
+    # temporarily fix by running this command to configure fcitx5
+    # $ nix run nixpkgs#fcitx5-configtool
     fcitx5 = {
       waylandFrontend = true;
       addons = with pkgs; [
