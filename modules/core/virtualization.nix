@@ -14,7 +14,6 @@
     spice-protocol
     win-virtio
     win-spice
-    whitesur-icon-theme
   ];
 
   # Manage the virtualisation services

@@ -14,7 +14,7 @@
   environment.systemPackages = with pkgs.kdePackages; [
     xdg-desktop-portal-kde
     kcalc
-    bibata-cursors
+    breeze-icons
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [

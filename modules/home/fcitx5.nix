@@ -28,7 +28,6 @@
         fcitx5-configtool
         qt5.qtbase
         qt5.qttools
-        libsForQt5.plasma-framework
       ];
     };
   };
