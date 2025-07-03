@@ -3,6 +3,7 @@
   imports = [
     ./browser.nix # firefox based browser
     ./cava.nix # audio visualizer
+    ./davinci-resolve.nix # video editing
     ./discord.nix # discord
     ./docker.nix # docker configuration
     ./fastfetch.nix # fetch tool
