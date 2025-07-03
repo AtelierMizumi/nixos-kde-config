@@ -38,21 +38,6 @@
       };
     };
 
-    # desktop.widgets = [
-    #   {
-    #     plasmusicToolbar = {
-    #       position = {
-    #         horizontal = 51;
-    #         vertical = 100;
-    #       };
-    #       size = {
-    #         width = 250;
-    #         height = 250;
-    #       };
-    #     };
-    #   }
-    # ];
-
     panels = [
       # Panel at the top
       {
@@ -79,8 +64,8 @@
           {
             iconTasks = {
               launchers = [
-                # "applications:zen-browser.desktop"
-                # "applications:vesktop.desktop"
+                "applications:zen-beta.desktop"
+                "applications:vesktop.desktop"
                 "applications:org.kde.dolphin.desktop"
                 "applications:org.kde.konsole.desktop"
                 # "applications:pcsx2.desktop"
@@ -130,7 +115,7 @@
               musicControls.showPlaybackControls = true;
               songText = {
                 displayInSeparateLines = true;
-                maximumWidth = 640;
+                maximumWidth = 480;
                 scrolling = {
                   behavior = "alwaysScroll";
                   speed = 3;
@@ -163,6 +148,8 @@
               time.format = "24h";
             };
           }
+
+          "org.kde.plasma.peekatdesktop"
         ];
         # hiding = "autohide";
       }
@@ -239,27 +226,27 @@
       # }
     ];
 
-    # window-rules = [
-    #   {
-    #     description = "Dolphin";
-    #     match = {
-    #       window-class = {
-    #         value = "dolphin";
-    #         type = "substring";
-    #       };
-    #       window-types = [ "normal" ];
-    #     };
-    #     apply = {
-    #       noborder = {
-    #         value = true;
-    #         apply = "force";
-    #       };
-    #       # `apply` defaults to "apply-initially"
-    #       maximizehoriz = true;
-    #       maximizevert = true;
-    #     };
-    #   }
-    # ];
+    window-rules = [
+      {
+        description = "Dolphin";
+        match = {
+          window-class = {
+            value = "dolphin";
+            type = "substring";
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          noborder = {
+            value = false;
+            apply = "force";
+          };
+          # `apply` defaults to "apply-initially"
+          maximizehoriz = true;
+          maximizevert = true;
+        };
+      }
+    ];
 
     powerdevil = {
       AC = {
@@ -286,7 +273,7 @@
     #   edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
     #   cornerBarrier = false;
 
-    #   scripts.polonium.enable = true;
+    #   scripts.polonium.enable = true
     # };
 
     kscreenlocker = {
@@ -332,7 +319,7 @@
         "Switch Window to Desktop 8" = "Meta+Shift+8";
         "Switch Window to Desktop 9" = "Meta+Shift+9";
         # Show all windows on the current desktop using Meta+Tab
-        "Show All Windows" = "Meta+Tab";
+        "Toggle Overview" = "Meta+Tab";
         # Quit the current application using Meta+W
         "Quit" = "Meta+W";
       };
