@@ -16,21 +16,30 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
       intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
+      intel-compute-runtime # OpenCL support for Intel GPUs
     ];
+  };
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
   };
 
   environment.systemPackages = with pkgs; [
     libva-utils
+    libva
     vdpauinfo
     vulkan-tools
     libvdpau-va-gl
     egl-wayland
     mesa
     nvidia-vaapi-driver
+    opencl-clang
   ];
+
+  boot.extraModulePackages = [ pkgs.linuxPackages.nvidia_x11 ];
 
   hardware.nvidia = {
     prime = {
