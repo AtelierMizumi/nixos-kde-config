@@ -8,6 +8,7 @@
 
     ## Office
     libreoffice
+    wpsoffice
 
     ## Utility
     dconf-editor
