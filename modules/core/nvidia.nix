@@ -34,12 +34,9 @@
     vulkan-tools
     libvdpau-va-gl
     egl-wayland
-    mesa
     nvidia-vaapi-driver
     opencl-clang
   ];
-
-  boot.extraModulePackages = [ pkgs.linuxPackages.nvidia_x11 ];
 
   hardware.nvidia = {
     prime = {
