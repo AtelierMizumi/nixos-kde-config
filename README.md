@@ -5,7 +5,7 @@
       <p></p>
     <div align="center">
         <p align="center">
-            <img src="./assets/github/color-bar-mocha.png" width="960" height="24" alt="Color Bar" />
+            <img src="./assets/github/color-bar-mocha.png" width="500" height="18" alt="Color Bar" />
         </p>
     </div>
        <div align="center">
@@ -22,6 +22,15 @@
       <br>
    </div>
 </h1>
+
+### 🖼️ Gallery
+
+<p align="center">
+   <img src="./assets/screenshots/desktop.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./assets/screenshots/coding.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./assets/screenshots/overview.png" style="margin-bottom: 15px;"/> <br>
+   Screenshots last updated <b>2025-07-04</b>
+</p>
 
 # 🗃️ Overview
 
@@ -56,6 +65,8 @@
 | **Screenshot Software**     | [Spectacle][Spectacle] |
 | **Browser**                 | [Zen Browser][Zen Browser] |
 | **Chat**                    | [Vesktop][Vesktop] |
+
+
 
 ## 📝 Shell aliases
 
@@ -92,7 +103,7 @@ NixOS (EXPAND)
 <summary>
 Custom Keybindings 
 </summary>
-
+</br>
 ##### Terminal
 - ```Meta+Alt+K``` Launch Konsole
 
@@ -143,7 +154,7 @@ sudo cp /etc/nixos/hardware-configuration.nix hosts/laptop/hardware-configuratio
 ```
 
 > [!NOTE]
-> It is recommend to see my own hardware configurations, I've made some custom changes in there that may benefits yours
+> It is recommended to see my own hardware configurations, I've made some custom changes in there that may benefits yours
 
 #### 4. **Customize the configuration**
 
@@ -186,20 +197,15 @@ After rebooting, you should be greeted by the KDE Plasma desktop environment wit
 
 # 👥 Credits
 
-This configuration is inspired by and learned from various sources:
+This configuration is inspired by and based on the following sources:
 
 - [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config): Main inspiration for structure and styling
 - [nix-community/plasma-manager](https://github.com/nix-community/plasma-manager): KDE Plasma configuration management
 - [NixOS Community](https://nixos.org/): For the amazing NixOS ecosystem
-- [Catppuccin Mocha color theme](https://catppuccin.com/palette/): Nice dark theme with good contrast for my VSCode config
+- [Catppuccin Mocha color theme](https://catppuccin.com/palette/): A dark theme with high contrast, used in my VSCode configuration
+- [Catppuccin Wallpapers submodule](https://github.com/zhichaoh/catppuccin-wallpaper): Collection of Catppuccin themed wallpapers.
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
-
-<!-- end of page, send back to the top -->
-
-<div align="right">
-  <a href="#readme">Back to the Top</a>
-</div>
 
 <!-- Links -->
 [KDE Plasma 6]: https://kde.org/plasma-desktop/
