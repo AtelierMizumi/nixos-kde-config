@@ -3,8 +3,8 @@
   home.packages = with pkgs; [
     ## Multimedia
     gimp
-    obs-studio
     pavucontrol
+    obs-studio
 
     ## Office
     libreoffice
