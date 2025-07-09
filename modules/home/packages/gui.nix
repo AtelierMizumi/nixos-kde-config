@@ -4,7 +4,6 @@
     ## Multimedia
     gimp
     pavucontrol
-    obs-studio
 
     ## Office
     libreoffice
