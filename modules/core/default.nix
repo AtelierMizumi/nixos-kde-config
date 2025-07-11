@@ -11,6 +11,7 @@
     ./security.nix
     ./services.nix
     ./nvidia.nix
+    ./mouse.nix
     ./steam.nix
     ./system.nix
     ./flatpak.nix
