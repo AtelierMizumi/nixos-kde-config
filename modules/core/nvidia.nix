@@ -23,6 +23,7 @@
       intel-compute-runtime # OpenCL support for Intel GPUs
     ];
   };
+
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "iHD";
   };
