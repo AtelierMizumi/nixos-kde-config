@@ -6,11 +6,14 @@
   # boot.supportedFilesystems = [ "ntfs" ];
 
   boot.loader = {
+    # Just want to remind myself that I need this line
+    # for the bootloader to be detected
+    efi.canTouchEfiVariables = true;
     grub = {
       enable = true;
       useOSProber = true;
       copyKernels = true;
-      # Actually make Grub a seperate boot entry and not an option in systemd-boot
+      # Actually make Grub a separate boot entry and not an option in systemd-boot
       efiInstallAsRemovable = false;
       efiSupport = true;
       fsIdentifier = "label";
