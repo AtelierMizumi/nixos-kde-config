@@ -36,6 +36,9 @@
     wavemon # monitoring for wireless network devices
     nvtopPackages.full
 
+    # Stress testing
+    s-tui
+
     # vkcube
     vulkan-tools
 
