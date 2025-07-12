@@ -30,6 +30,9 @@
   ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
+  boot.extraModprobeConfig = ''
+    options hid_apple fnmode=0
+  '';
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/0c26eff3-fddd-41c3-98f2-02705a2ec2cc";
