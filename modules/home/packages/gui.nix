@@ -9,6 +9,9 @@
     libreoffice
     wpsoffice
 
+    # Stress test GPU
+    unigine-heaven
+
     ## Utility
     dconf-editor
     mission-center # GUI resources monitor
