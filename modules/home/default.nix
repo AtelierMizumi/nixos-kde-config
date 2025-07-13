@@ -11,6 +11,8 @@
     ./fonts.nix # fonts settings
     ./gaming.nix # packages related to gaming
     ./git.nix # version control
+    ./gtk.nix # gtk configuration
+    ./xorg.nix # xorg configuration
     ./kitty.nix # terminal
     ./nix-search/nix-search.nix # TUI to search nixpkgs
     ./nvim.nix # neovim configuration

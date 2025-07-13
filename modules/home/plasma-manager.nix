@@ -148,8 +148,6 @@
               time.format = "24h";
             };
           }
-
-          "org.kde.plasma.peekatdesktop"
         ];
         # hiding = "autohide";
       }
