@@ -35,6 +35,7 @@
     vulkan-tools
     libvdpau-va-gl
     egl-wayland
+    mesa
     nvidia-vaapi-driver
     opencl-clang
   ];
