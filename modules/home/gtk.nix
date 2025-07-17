@@ -1,35 +1,28 @@
 { pkgs, ... }:
 {
-  gtk = {
-    enable = true;
+  ## Will be used after I fix the gtk2.0 file
+  # gtk = {
+  #   enable = true;
 
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
-    };
+  #   theme = {
+  #     name = "Breeze-Dark";
+  #     package = pkgs.libsForQt5.breeze-gtk;
+  #   };
 
-    iconTheme = {
-      name = "WhiteSur";
-      package = pkgs.whitesur-icon-theme;
-    };
+  #   iconTheme = {
+  #     name = "WhiteSur";
+  #     package = pkgs.whitesur-icon-theme;
+  #   };
 
-    cursorTheme = {
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
-      size = 32;
-    };
+  #   cursorTheme = {
+  #     name = "Bibata-Modern-Ice";
+  #     package = pkgs.bibata-cursors;
+  #     size = 32;
+  #   };
 
-    font = {
-      name = "Noto Sans";
-      size = 12;
-    };
-
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
+  #   font = {
+  #     name = "Noto Sans";
+  #     size = 12;
+  #   };
+  # };
 }
