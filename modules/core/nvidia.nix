@@ -62,7 +62,12 @@
     # Enable this if you have graphical corruption issues or application crashes after waking
     # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead
     # of just the bare essentials.
-    powerManagement.enable = false;
+    powerManagement.enable = true;
+
+    # Whether to enable dynamic Boost balances power between the CPU and the GPU
+    # for improved performance on supported laptops using the nvidia-powerd daemon.
+    # For more information, see the NVIDIA docs, on Chapter 23. Dynamic Boost on Linux
+    dynamicBoost.enable = true;
 
     # Fine-grained power management. Turns off GPU when not in use.
     # Experimental and only works on modern Nvidia GPUs (Turing or newer).
