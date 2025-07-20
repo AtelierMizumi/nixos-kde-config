@@ -15,6 +15,7 @@
     ## Utility
     dconf-editor
     mission-center # GUI resources monitor
+    gparted
 
     # translation
     dialect
