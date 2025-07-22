@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     ## Video Editing, DaVinci Resolve Free Edition
     davinci-resolve
-    shotcut
+    openshot-qt
+    flowblade
   ];
 }
