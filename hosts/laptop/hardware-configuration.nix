@@ -51,15 +51,36 @@
     ];
   };
 
-  fileSystems."/home/thuanc177/Drives/Old-Linux-Drive" = {
-    device = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
-    fsType = "ext4";
-    options = [
-      "users"
-      "auto"
-      "nofail"
-      "exec"
+  systemd.mounts = [
+    {
+      what = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
+      where = "/home/thuanc177/Drives/Old-Linux-Drive";
+      type = "ext4";
+      options = "users,rw,auto,nofail,exec";
+    }
+    {
+      what = "/dev/disk/by-uuid/eb27d41c-e4b5-4695-a42c-31cd696be7dd";
+      where = "/home/thuanc177/Drives/Baracuda";
+      type = "ext4";
+      options = "users,rw,auto,nofail,exec";
+    }
+  ];
+
+  systemd.services.fix-drive-ownership = {
+    description = "Fix ownership of external drives";
+    after = [
+      "home-thuanc177-Drives-Old\\x2dLinux\\x2dDrive.mount"
+      "home-thuanc177-Drives-Baracuda.mount"
     ];
+    wantedBy = [ "multi-user.target" ];
+    script = ''
+      chown -R thuanc177:users /home/thuanc177/Drives/Old-Linux-Drive
+      chown -R thuanc177:users /home/thuanc177/Drives/Baracuda
+    '';
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+    };
   };
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
