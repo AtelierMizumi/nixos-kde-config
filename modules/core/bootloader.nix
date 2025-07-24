@@ -11,7 +11,7 @@
     efi.canTouchEfiVariables = true;
     grub = {
       enable = true;
-      useOSProber = true;
+      useOSProber = false;
       copyKernels = true;
       # Actually make Grub a separate boot entry and not an option in systemd-boot
       efiInstallAsRemovable = false;

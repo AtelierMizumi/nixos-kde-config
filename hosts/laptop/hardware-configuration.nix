@@ -51,20 +51,29 @@
     ];
   };
 
-  systemd.mounts = [
-    {
-      what = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
-      where = "/home/thuanc177/Drives/Old-Linux-Drive";
-      type = "ext4";
-      options = "users,rw,auto,nofail,exec";
-    }
-    {
-      what = "/dev/disk/by-uuid/eb27d41c-e4b5-4695-a42c-31cd696be7dd";
-      where = "/home/thuanc177/Drives/Baracuda";
-      type = "ext4";
-      options = "users,rw,auto,nofail,exec";
-    }
-  ];
+  fileSystems."/home/thuanc177/Drives/Old-Linux-Drive" = {
+    device = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
+    fsType = "ext4";
+    options = [
+      "users"
+      "rw"
+      "auto"
+      "nofail"
+      "exec"
+    ];
+  };
+
+  fileSystems."/home/thuanc177/Drives/Baracuda" = {
+    device = "/dev/disk/by-uuid/eb27d41c-e4b5-4695-a42c-31cd696be7dd";
+    fsType = "ext4";
+    options = [
+      "users"
+      "rw"
+      "auto"
+      "nofail"
+      "exec"
+    ];
+  };
 
   systemd.services.fix-drive-ownership = {
     description = "Fix ownership of external drives";
