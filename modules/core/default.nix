@@ -16,6 +16,7 @@
     ./system.nix
     ./flatpak.nix
     ./user.nix
+    ./opentabletdriver.nix
     ./wayland.nix
     ./virtualization.nix
     ./zram.nix
