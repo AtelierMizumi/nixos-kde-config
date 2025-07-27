@@ -42,12 +42,12 @@
 
   hardware.nvidia = {
     prime = {
-      # offload = {
-      #   enable = true;
-      #   enableOffloadCmd = true;
-      # };
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
 
-      sync.enable = true;
+      # sync.enable = true;
       # Check for correct busId using the command below
       # nix shell nixpkgs#pciutils -c lspci -d ::03xx
       # https://nixos.wiki/wiki/Nvidia#Enable_Unfree_Software_Repositories
