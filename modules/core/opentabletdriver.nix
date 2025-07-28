@@ -6,5 +6,7 @@
 }:
 {
   # Enable OpenTabletDriver
+
   hardware.opentabletdriver.enable = true;
 }
+# run sudo rmmod wacom
