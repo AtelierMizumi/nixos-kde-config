@@ -11,5 +11,6 @@
 
     ## Python
     python3
+    ntfs3g
   ];
 }
