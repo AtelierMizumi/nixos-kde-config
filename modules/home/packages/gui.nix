@@ -16,6 +16,7 @@
     dconf-editor
     mission-center # GUI resources monitor
     gparted
+    qbittorrent
 
     # translation
     dialect
