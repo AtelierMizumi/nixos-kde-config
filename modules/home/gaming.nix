@@ -27,9 +27,10 @@
     ## Emulation
     # sameboy
     # snes9x
-    # cemu
+    ## yuzu
     # dolphin-emu
     pcsx2
     retroarch-free
+    fuse
   ];
 }

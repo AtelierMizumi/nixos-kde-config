@@ -11,6 +11,10 @@
 
     ## Python
     python3
+
+    # Windows partition support
     ntfs3g
+
+    appimage-run
   ];
 }
