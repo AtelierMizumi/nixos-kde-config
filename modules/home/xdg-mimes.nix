@@ -111,14 +111,5 @@ in
     vblank_mode = "0";
     __GL_THREADED_OPTIMIZATIONS = "1";
     mesa_glthread = "true";
-
-    # Proton optimizations
-    PROTON_HIDE_NVIDIA_GPU = "0";
-    PROTON_ENABLE_NVAPI = "1";
-    PROTON_FORCE_LARGE_ADDRESS_AWARE = "1";
-    PROTON_NO_ESYNC = "0";
-    PROTON_NO_FSYNC = "0";
-    PROTON_USE_WINED3D = "0";
-    STEAM_RUNTIME_HEAVY_PIN = "0";
   };
 }

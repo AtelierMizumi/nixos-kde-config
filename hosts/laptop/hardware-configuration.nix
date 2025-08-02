@@ -75,16 +75,30 @@
     ];
   };
 
+  fileSystems."/home/thuanc177/Drives/Windows" = {
+    device = "/dev/disk/by-uuid/CCFA5C7DFA5C662C";
+    fsType = "ntfs";
+    options = [
+      "users"
+      "rw"
+      "auto"
+      "nofail"
+      "exec"
+    ];
+  };
+
   systemd.services.fix-drive-ownership = {
     description = "Fix ownership of external drives";
     after = [
       "home-thuanc177-Drives-Old\\x2dLinux\\x2dDrive.mount"
       "home-thuanc177-Drives-Baracuda.mount"
+      "home-thuanc177-Drives-Windows.mount"
     ];
     wantedBy = [ "multi-user.target" ];
     script = ''
       chown -R thuanc177:users /home/thuanc177/Drives/Old-Linux-Drive
       chown -R thuanc177:users /home/thuanc177/Drives/Baracuda
+      chown -R thuanc177:users /home/thuanc177/Drives/Windows
     '';
     serviceConfig = {
       Type = "oneshot";
