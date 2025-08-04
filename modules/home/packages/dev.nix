@@ -16,5 +16,6 @@
     ntfs3g
 
     appimage-run
+    power-profiles-daemon
   ];
 }
