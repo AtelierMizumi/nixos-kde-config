@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./android-studio.nix # android studio
     ./browser.nix # firefox based browser
     ./cava.nix # audio visualizer
     ./davinci-resolve.nix # video editing
