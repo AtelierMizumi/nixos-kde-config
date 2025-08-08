@@ -18,9 +18,6 @@
     gparted
     qbittorrent
 
-    # Noise cancellation virtual mic
-    noisetorch
-
     # translation
     dialect
   ];

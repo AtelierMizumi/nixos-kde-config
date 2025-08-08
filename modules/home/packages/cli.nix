@@ -35,6 +35,7 @@
     nitch # systhem fetch util
     wavemon # monitoring for wireless network devices
     nvtopPackages.full
+    rar
 
     # Stress testing
     s-tui
