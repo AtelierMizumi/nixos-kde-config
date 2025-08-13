@@ -6,10 +6,12 @@
     mangohud
     goverlay
     wine
-    gamescope
     winetricks
     protontricks
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+
+    # mouse setup
+    piper
 
     ## Minecraft
     prismlauncher
