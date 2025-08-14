@@ -26,6 +26,7 @@
       # ziglang.vscode-zig
       tamasfe.even-better-toml
       golang.go
+      ms-vscode.cmake-tools
 
       ## Color scheme
       catppuccin.catppuccin-vsc-icons
