@@ -1,20 +1,24 @@
-{ ... }:
+{ config, pkgs, ... }:
 {
-  # Generate ssh key using this command
-  # ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_github -C "thuanc177@gmail.com"
-  # cat ~/.ssh/id_github.pub
-  # This keey can then be uploaded to your Github in SSH and GPG keys and be used to access Github
-
   programs.ssh = {
     enable = true;
+    # Vô hiệu hóa cấu hình mặc định Host *
+    enableDefaultConfig = false;
 
-    addKeysToAgent = "1h";
+    # Xóa cấu hình cũ không hợp lệ
+    # addKeysToAgent = "1h";
+    # controlMaster = "auto";
+    # controlPath = "~/.ssh/control-%r@%h:%p";
+    # controlPersist = "10m";
 
-    controlMaster = "auto";
-    controlPath = "~/.ssh/control-%r@%h:%p";
-    controlPersist = "10m";
-
+    # Định nghĩa khối cấu hình chung cho mọi Host (*)
     matchBlocks = {
+      "*" = {
+        addKeysToAgent = "1h";
+        controlMaster = "auto";
+        controlPath = "~/.ssh/control-%r@%h:%p";
+        controlPersist = "10m";
+      };
       github = {
         host = "github.com";
         hostname = "ssh.github.com";
