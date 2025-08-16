@@ -1,7 +1,7 @@
 { ... }:
 {
   services.scx = {
-    enable = true;
-    scheduler = "scx_lavd";
+    enable = false;
+    scheduler = "scx_mitosis";
   };
 }

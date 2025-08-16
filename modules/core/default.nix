@@ -10,7 +10,6 @@
     ./pipewire.nix
     ./program.nix
     ./security.nix
-    ./services.nix
     ./nvidia.nix
     ./mouse.nix
     ./steam.nix
