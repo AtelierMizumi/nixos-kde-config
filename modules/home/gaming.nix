@@ -8,6 +8,7 @@
     wine
     winetricks
     protontricks
+    protonup-qt
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
 
     # mouse setup
@@ -33,6 +34,5 @@
     # dolphin-emu
     pcsx2
     retroarch-free
-    fuse
   ];
 }
