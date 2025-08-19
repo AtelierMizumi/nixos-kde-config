@@ -43,6 +43,9 @@
     # vkcube
     vulkan-tools
 
+    # fuse
+    fuse
+
     ## Fun / screensaver
     cbonsai
     cmatrix

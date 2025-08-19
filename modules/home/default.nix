@@ -13,6 +13,7 @@
     ./gaming.nix # packages related to gaming
     ./git.nix # version control
     ./gtk.nix # gtk configuration
+    ./notion.nix # notion
     ./xorg.nix # xorg configuration
     ./kitty.nix # terminal
     ./nix-search/nix-search.nix # TUI to search nixpkgs
