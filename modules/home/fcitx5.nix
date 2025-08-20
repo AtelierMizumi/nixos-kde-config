@@ -29,8 +29,11 @@
         fcitx5-unikey
         fcitx5-anthy
         fcitx5-configtool
-        qt5.qtbase
-        qt5.qttools
+        # qt5.qtbase
+        # qt5.qttools
+        qt5.full
+        qt6.full
+        ninja
       ];
     };
   };
