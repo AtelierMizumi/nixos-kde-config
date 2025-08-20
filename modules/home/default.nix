@@ -21,8 +21,9 @@
     ./packages # other packages
     ./osu.nix # osu! lazer
     # ./proton-vpn.nix # protonvpn gui
+    ./qt-creator.nix # qt creator
     ./plasma-manager.nix
-    ./intellij.nix # that unfree ide
+    ./jetbrains.nix # that unfree ide
     ./ssh.nix
     ./vscode # vscode fork
     ./xdg-mimes.nix # xdg config
