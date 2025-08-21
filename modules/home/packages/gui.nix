@@ -7,7 +7,6 @@
 
     ## Office
     libreoffice
-    wpsoffice
 
     # Stress test GPU
     unigine-heaven
