@@ -23,6 +23,4 @@
     plasma-browser-integration
     elisa
   ];
-
-  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }

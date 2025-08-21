@@ -19,7 +19,7 @@
     ./nvim.nix # neovim configuration
     ./packages # other packages
     ./osu.nix # osu! lazer
-    ./proton-vpn.nix # protonvpn gui
+    # ./proton-vpn.nix # protonvpn gui
     ./plasma-manager.nix
     ./ssh.nix
     ./vscode # vscode fork

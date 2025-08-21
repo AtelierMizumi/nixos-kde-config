@@ -3,6 +3,7 @@
   imports = [
     ./bootloader.nix
     ./bluetooth.nix
+    ./cloudflare-warp.nix
     ./network.nix
     ./nh.nix
     ./kde.nix
