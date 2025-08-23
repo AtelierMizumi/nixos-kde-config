@@ -51,9 +51,9 @@
     ];
   };
 
-  fileSystems."/home/thuanc177/Drives/Old-Linux-Drive" = {
-    device = "/dev/disk/by-uuid/54d477d8-6b81-4548-a67f-99f6d3372198";
-    fsType = "ext4";
+  fileSystems."/home/thuanc177/Drives/NTFS-Storage" = {
+    device = "/dev/disk/by-uuid/1E63713303DB0394";
+    fsType = "ntfs";
     options = [
       "users"
       "rw"
@@ -76,7 +76,7 @@
   };
 
   fileSystems."/home/thuanc177/Drives/Windows" = {
-    device = "/dev/disk/by-uuid/CCFA5C7DFA5C662C";
+    device = "/dev/disk/by-uuid/EA9C8F829C8F4851";
     fsType = "ntfs";
     options = [
       "users"
@@ -96,7 +96,7 @@
     ];
     wantedBy = [ "multi-user.target" ];
     script = ''
-      chown -R thuanc177:users /home/thuanc177/Drives/Old-Linux-Drive
+      chown -R thuanc177:users /home/thuanc177/Drives/NTFS-Storage
       chown -R thuanc177:users /home/thuanc177/Drives/Baracuda
       chown -R thuanc177:users /home/thuanc177/Drives/Windows
     '';
