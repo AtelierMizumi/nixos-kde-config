@@ -11,6 +11,8 @@
     # Stress test GPU
     unigine-heaven
 
+    thunderbird-bin
+
     ## Utility
     dconf-editor
     mission-center # GUI resources monitor
