@@ -21,6 +21,7 @@
     ./osu.nix # osu! lazer
     # ./proton-vpn.nix # protonvpn gui
     ./plasma-manager.nix
+    ./intellij.nix # that unfree ide
     ./ssh.nix
     ./vscode # vscode fork
     ./xdg-mimes.nix # xdg config
