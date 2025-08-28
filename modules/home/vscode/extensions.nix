@@ -31,6 +31,7 @@
       ## Color scheme
       catppuccin.catppuccin-vsc-icons
       catppuccin.catppuccin-vsc
+      llvm-vs-code-extensions.vscode-clangd
       # jdinhlife.gruvbox
       # jonathanharty.gruvbox-material-icon-theme
     ];
