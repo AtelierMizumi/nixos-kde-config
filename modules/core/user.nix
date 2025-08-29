@@ -32,7 +32,6 @@
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       # home.stateVersion = "25.11";
-      nixpkgs.config.allowUnfree = true;
       programs.home-manager.enable = true;
     };
   };
