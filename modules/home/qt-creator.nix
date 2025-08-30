@@ -2,7 +2,9 @@
 {
   home.packages = with pkgs; [
     qtcreator
-    cmake
-    qt6
+    libGL
+    libsForQt5.qwt
+    libsForQt5.qt3d
+    libsForQt5.qtbase
   ];
 }
