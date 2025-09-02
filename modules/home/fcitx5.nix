@@ -31,8 +31,8 @@
         fcitx5-configtool
         # qt5.qtbase
         # qt5.qttools
-        qt5.full
-        qt6.full
+        # qt5.full
+        # qt6.full
         ninja
       ];
     };
