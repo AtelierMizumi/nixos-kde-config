@@ -63,6 +63,21 @@
     ];
   };
 
+  # boot.initrd.luks.devices."luks-uuid-after-mounted".device =
+  #  "/dev/disk/by-uuid/RAW-UUID-HERE";
+
+  # fileSystems."/home/thuanc177/Drives/Arch-Linux" = {
+  #   device = "/dev/disk/by-uuid/??";
+  #   fsType = "ext4";
+  #   options = [
+  #     "users"
+  #     "rw"
+  #     "auto"
+  #     "nofail"
+  #     "exec"
+  #   ];
+  # };
+
   fileSystems."/home/thuanc177/Drives/Baracuda" = {
     device = "/dev/disk/by-uuid/eb27d41c-e4b5-4695-a42c-31cd696be7dd";
     fsType = "ext4";
