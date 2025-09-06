@@ -9,6 +9,8 @@
     gdb
     cmake
 
+    ncurses
+
     ## Python
     python3
 
