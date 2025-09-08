@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./appimage.nix
     ./bootloader.nix
     ./bluetooth.nix
     ./cloudflare-warp.nix
