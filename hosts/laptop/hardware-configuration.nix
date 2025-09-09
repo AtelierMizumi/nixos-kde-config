@@ -67,7 +67,7 @@
     "/dev/disk/by-uuid/509b9043-20df-4523-b825-890825a6bdf5";
 
   fileSystems."/home/thuanc177/Drives/Arch-Linux" = {
-    device = "/dev/disk/by-uuid/??";
+    device = "/dev/disk/by-uuid/509b9043-20df-4523-b825-890825a6bdf5";
     fsType = "ext4";
     options = [
       "users"
