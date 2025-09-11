@@ -51,6 +51,9 @@
     cmatrix
     fortune
 
+    # Command history
+    atuin
+
     ## Multimedia
     ani-cli
 
