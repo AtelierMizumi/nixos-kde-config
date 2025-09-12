@@ -15,6 +15,7 @@
     ./gtk.nix # gtk configuration
     ./notion.nix # notion
     ./xorg.nix # xorg configuration
+    ./kdeconnect.nix # kdeconnect
     ./kitty.nix # terminal
     ./nix-search/nix-search.nix # TUI to search nixpkgs
     ./nvim.nix # neovim configuration
