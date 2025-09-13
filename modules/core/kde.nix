@@ -11,6 +11,8 @@
     desktopManager.plasma6.enable = true;
   };
 
+  programs.kdeconnect.enable = true;
+
   environment.systemPackages = with pkgs.kdePackages; [
     xdg-desktop-portal-kde
     kcalc
