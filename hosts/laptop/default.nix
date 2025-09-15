@@ -10,7 +10,7 @@
     powertop
   ];
 
-  services = {
+   services = {
     power-profiles-daemon.enable = true;
 
     upower = {
