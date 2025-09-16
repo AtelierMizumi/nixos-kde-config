@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./atlauncher.nix # atlauncher minecraft launcher
     ./android-studio.nix # android studio
     ./browser.nix # firefox based browser
     ./cava.nix # audio visualizer

@@ -1,7 +1,11 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    code-cursor
+    netcat
     jetbrains.idea-ultimate
+    openjdk17
+    mariadb
     jetbrains.rider
     github-copilot-intellij-agent
     dotnet-sdk_9
